@@ -1,0 +1,17 @@
+<div class="flex-center position-ref full-height">
+  <div class="wrapper fadeInDown">
+    <div id="formContent">
+      <div class="fadeIn first">
+        <img src="assets/img/jaime_isaza_cadavid.png" id="icon" alt="User Icon" />
+      </div>
+      <form [formGroup]="loginForm">
+        <input type="email" id="login" class="fadeIn second" formControlName="email" placeholder="Email">
+        <input type="password" id="password" class="fadeIn third" formControlName="password" placeholder="Contraseña">
+        <input type="submit" (click)="loginUser()" class="fadeIn fourth" value="Log In">
+        <br>
+        <a class="btn btn-google" [routerLink]="['/password/email']">¿Olvidó su contraseña?</a>
+        <div *ngIf="mensajeLogin" class="alert alert-success">{{ mensajeLogin }} </div>
+      </form>
+    </div>
+  </div>
+</div>

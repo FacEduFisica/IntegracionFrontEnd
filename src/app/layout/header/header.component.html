@@ -1,0 +1,8 @@
+<header class="header">
+  <ng-container *ngIf="loginService.isGuardian()">
+    <app-navigation-trigger></app-navigation-trigger>
+  </ng-container>
+
+  <app-logo class="mx-auto"></app-logo>
+
+</header>

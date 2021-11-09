@@ -1,0 +1,10 @@
+<div class="main-widget">
+  <h1 class="border-widget text-success ml-auto mr-auto mb-4">Aplicaciones</h1>
+  <div class="widget-lists-app card-columns">
+    <widget-featured-app-post *ngFor="let aplicacion of aplicaciones" [aplicacion]=aplicacion></widget-featured-app-post>
+  </div>
+  <h1 class="border-widget text-success ml-auto mr-auto mb-4">Noticias</h1>
+  <div class="widget-lists card-columns">
+    <widget-featured-post *ngFor="let noticia of noticias" [noticia]=noticia></widget-featured-post>
+  </div>
+</div>
