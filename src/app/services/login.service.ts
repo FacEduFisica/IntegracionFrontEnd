@@ -7,8 +7,9 @@ import { Router } from '@angular/router';
   providedIn: 'root'
 })
 export class LoginService {
-  url = "http://integracion.poli/api";
+  //url = "http://integracion.poli/api";
   //url = "http://escuela.poli";
+  url = "http://localhost:8000/api";
   expiresAt;
   accessToken;
   userProfile;
