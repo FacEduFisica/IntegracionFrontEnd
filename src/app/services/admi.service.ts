@@ -6,9 +6,9 @@ import { Observable } from "rxjs";
   providedIn: "root",
 })
 export class AdmiService {
-  //url = "http://escuela.poli";
+  url = "https://integration-appback.herokuapp.com/api";
   //url = "http://integracion.poli/api";
-  url = "http://localhost:8000/api";
+  //url = "http://localhost:8000/api";
   constructor(private http: HttpClient) {}
 
   getNoticias(): Observable<any> {
